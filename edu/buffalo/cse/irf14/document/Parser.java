@@ -16,6 +16,7 @@ public class Parser {
 	 */
 	public static Document parse(String filename) throws ParserException {
 		// TODO YOU MUST IMPLEMENT THIS
+		System.out.println("Hello World!!");
 		return null;
 	}
 
