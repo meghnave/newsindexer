@@ -12,7 +12,23 @@ import java.util.HashMap;
 public class Document {
 	//Sample implementation - you can change this if you like
 	private HashMap<FieldNames, String[]> map;
-	
+	@Override
+	public String toString()
+	{
+		StringBuilder a = new StringBuilder();
+		for(FieldNames f: map.keySet())
+		{
+			a.append(f);
+			a.append(" : ");
+			for(String s: map.get(f))
+			{
+				a.append(s);
+				a.append(" ");
+			}
+			a.append(" , ");
+		}
+		return a.toString();
+	}
 	/**
 	 * Default constructor
 	 */

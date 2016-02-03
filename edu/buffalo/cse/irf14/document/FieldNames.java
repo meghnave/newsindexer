@@ -10,3 +10,4 @@ package edu.buffalo.cse.irf14.document;
 public enum FieldNames {
 	FILEID, CATEGORY, TITLE, AUTHOR, AUTHORORG, PLACE, NEWSDATE, CONTENT
 };
+

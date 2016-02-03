@@ -89,6 +89,7 @@ public class ParserTest {
 			e.printStackTrace(); // So that debugging may be a bit easier.
 			fail("A ParserException was thrown when it should not have been thrown.");
 		}
+		
 	}
 	
 	private void validateTitle(Document d, int count){

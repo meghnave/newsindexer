@@ -28,21 +28,21 @@ public class Runner {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String ipDir = args[0];
-		String indexDir = args[1];
+		//String ipDir = args[0];
+		//String indexDir = args[1];
 		//more? idk!
 		
-		File ipDirectory = new File(ipDir);
-		String[] catDirectories = ipDirectory.list();
+		//File ipDirectory = new File(ipDir);
+		//String[] catDirectories = ipDirectory.list();
 		
-		String[] files;
+	//	String[] files;
 		File dir;
 		
 		Document d = null;
-		IndexWriter writer = new IndexWriter(indexDir);
+		//IndexWriter writer = new IndexWriter(indexDir);
 		
 		try {
-			for (String cat : catDirectories) {
+			/*for (String cat : catDirectories) {
 				dir = new File(ipDir+ File.separator+ cat);
 				files = dir.list();
 				
@@ -60,10 +60,13 @@ public class Runner {
 					
 				}
 				
-			}
-			
-			writer.close();
-		} catch (IndexerException e) {
+			}*/
+			dir = new File("/home/meghna/git/newsindexer/training/acq/0000027");
+			d = Parser.parse("/home/meghna/git/newsindexer/training/acq/0000027");
+			//writer.addDocument(d);
+			System.out.println(d);
+		//	writer.close();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
